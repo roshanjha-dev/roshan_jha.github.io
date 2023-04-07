@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan Jha</title>
+
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Custom css-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/81f9f40f6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#services" style="--i:3;">Services</a>
+            <a href="#portfolio" style="--i:4;">Portfolio</a>
+            <a href="#contact" style="--i:5;">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+
+        <div class="home-sci">
+            <a href="https://github.com/roshanjha280"><i class='bx bxl-github'></i></a>
+            <a href="https://leetcode.com/roshan_jha/"><i class='bx bx-code'></i></a>
+            <a href="https://www.linkedin.com/in/phool-roshan-jha/"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.instagram.com/roshan.jha.007/"><i class="bx bxl-instagram-alt"></i></a>
+        </div>
+
+        <div class="home-content">
+            <h3>Hello, my name is</h3>
+            <h1>Phool Roshan Jha</h1>
+            <h3>And I'm a <span>Full Stack Developer</span></h3>
+            <p></p>
+            <a href="images/Roshan_Jha_Resume.pdf" download class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="images/home_img.jpg" alt="" >
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!---------------about---------------->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my_img2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I am a Software Developer having experience of 2 years at Persistent Systems. I am currently pursuing my MTech in Computer Science
+                        from Indian Institute of Technology, Bhilai. 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Experienced</span><br>JAVA, C/C++, C#</li>
+                            <li><span>Intermediate</span><br>Android, Python, SQL, NoSQL</li>
+                            <li><span>Familiar</span><br>Php, Html, Javascript, AWS(Basic services)</li>
+                            <li><span>Tools & Technologies</span><br>Android Studio, Git, Github, Visual Studio, Postman, Firebase, Local Server (WAMP, XAMPP),
+                                 Eclipse, Netbeans, SQLite DB, MySQL, OracleDB, MongoDB, .NET, ASP.NET</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Dec, 2020 to Jul, 2022</span><br>Software Engineer at Persistent Systems Ltd.</li>
+                            <li><span>Dec, 2018 to Jan, 2019</span><br>ML Internship at Foxmula</li>
+                            <li><span>July, 2018 to Sept, 2018</span><br>Android App Dev Internship at Suliteos Pvt. Ltd.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Aug, 2022 to Present</span><br>MTech from IIT Bhilai</li>
+                            <li><span>Aug, 2016 to Nov, 2020</span><br>BTech from JECRC (RTU, Kota)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------Services-------------------->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web App Development</h2>
+                    <p>This is a development of the website from scratch to all of its required features.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Android App Development</h2>
+                    <p>This is a development of the mobile applications.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>PC App Development</h2>
+                    <p>This is development a JAVA based application development from scratch to all of its required features.</p>
+                    <a href="#">learn more</a>
+                </div>     
+            </div>
+        </div>
+    </section>
+
+    <!---------------------portfolio---------------------->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Scanner - Extract text from Images & QR</h3>
+                        <p>The app lets you scan the text from the Images, edit and send as required. Also it has the feature of scanning QR. Download it from playstore.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.roshantech.rohandsouza.textscanner&hl=en"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Indian Railways</h3>
+                        <p>This is a dummy app which provides some improvement like the improvement in the facility of the announcement 
+                            while at the station, improved security to the belongings of the passengers in cloak room, and the easy 
+                            communication for the travelers on the train with the respective persons in the upcoming station.</p>
+                        <a href="https://github.com/roshanjha280/IndianRailway"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Chat Application for PC</h3>
+                        <p>This is a GUI based WhatsApp like chatting application for PC using JAVA Networking and socket programming.
+                            Multiple(more than two) users can chat at a single time. The number of users who are currently connected 
+                            can also be checked.</p>
+                        <a href="https://github.com/roshanjha280/ChatApplicationForPC"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Library Management System</h3>
+                        <p>This is a GUI based Library Management System to manage the registration of students and new books, issue and return using JAVA and SQLite.</p>
+                        <a href="https://github.com/roshanjha280/LibraryManagementSystem"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Indian Railways</h3>
+                        <p>This is a dummy app which provides some improvement like the improvement in the facility of the announcement 
+                            while at the station, improved security to the belongings of the passengers in cloak room, and the easy 
+                            communication for the travelers on the train with the respective persons in the upcoming station.</p>
+                        <a href="https://github.com/roshanjha280/IndianRailway"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Chat Application for PC</h3>
+                        <p>This is a GUI based WhatsApp like chatting application for PC using JAVA Networking and socket programming.
+                            Multiple(more than two) users can chat at a single time. The number of users who are currently connected 
+                            can also be checked.</p>
+                        <a href="https://github.com/roshanjha280/ChatApplicationForPC"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
+
+    <!--------------------Contact---------------------->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> roshanjha280@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 7733884259</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/phool-roshan-jha/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/roshan.jha.007/"><i class="bx bxl-instagram-alt"></i></a>
+                        <a href="https://twitter.com/rohan_dsouza292"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.facebook.com/roshan.jha.52056"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Roshan 2023</p>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
+    <script>
+    
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+    
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    
+    
+    </script>
+
+</body>
+
+</html>
