@@ -297,9 +297,9 @@ body{
 }
 
 #mouse {
-    opacity: 1;
-    animation: floatImage 4s ease-in-out infinite;
-    animation-delay: 3.1s;
+    opacity: 0;
+    animation: slideTop 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2.1s, 3.1s;
 }
 
 #mouse .mouse-scroll {
