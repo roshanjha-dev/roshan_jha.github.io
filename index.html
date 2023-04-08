@@ -25,7 +25,7 @@
             <a href="#home" style="--i:1;" class="active">Home</a>
             <a href="#about" style="--i:2;">About</a>
             <a href="#services" style="--i:3;">Services</a>
-            <a href="#portfolio" style="--i:4;">Portfolio</a>
+            <a href="#portfolio" style="--i:4;">Work</a>
             <a href="#contact" style="--i:5;">Contact</a>
         </nav>
 
@@ -59,9 +59,15 @@
             </div>
             
         </div>
-
+        
     </section>
-
+    <section id="mouse">
+        <div class="mouse-scroll">
+            <i class='bx bx-mouse'></i>
+            <h6>Scroll down</h6>
+        </div>
+        
+    </section>
     <!---------------about---------------->
     <section id="about">
         <div class="container">
@@ -106,6 +112,13 @@
             </div>
         </div>
     </section>
+    <section id="mouse">
+        <div class="mouse-scroll">
+            <i class='bx bx-mouse'></i>
+            <h6>Scroll down</h6>
+        </div>
+        
+    </section>
 
     <!--------------------Services-------------------->
     <section id="services">
@@ -133,8 +146,15 @@
             </div>
         </div>
     </section>
+    <section id="mouse">
+        <div class="mouse-scroll">
+            <i class='bx bx-mouse'></i>
+            <h6>Scroll down</h6>
+        </div>
+        
+    </section>
 
-    <!---------------------portfolio---------------------->
+    <!---------------------Work---------------------->
     <section id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
@@ -181,26 +201,31 @@
                 <div class="work">
                     <img src="images/work-2.png">
                     <div class="layer">
-                        <h3>Indian Railways</h3>
-                        <p>This is a dummy app which provides some improvement like the improvement in the facility of the announcement 
-                            while at the station, improved security to the belongings of the passengers in cloak room, and the easy 
-                            communication for the travelers on the train with the respective persons in the upcoming station.</p>
-                        <a href="https://github.com/roshanjha280/IndianRailway"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>MTC Child Care</h3>
+                        <p>This is Child care Android application which manages kids below 5 years about the health and their nutrition.</p>
+                        <a href="https://github.com/roshanjha280/MTCChildCare"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work-3.png">
                     <div class="layer">
-                        <h3>Chat Application for PC</h3>
-                        <p>This is a GUI based WhatsApp like chatting application for PC using JAVA Networking and socket programming.
-                            Multiple(more than two) users can chat at a single time. The number of users who are currently connected 
-                            can also be checked.</p>
-                        <a href="https://github.com/roshanjha280/ChatApplicationForPC"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Blood Donation</h3>
+                        <p>This is a blood donation dummy android app for hospital which deals with taking the maintaining the records of the 
+                            donor. Also reminds the donors about the blood donation camp. Whoever wants to donate can register through this app.
+                        </p>
+                        <a href="https://github.com/roshanjha280/blood_donation"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
             <a href="#" class="btn">See more</a>
         </div>
+    </section>
+    <section id="mouse">
+        <div class="mouse-scroll">
+            <i class='bx bx-mouse'></i>
+            <h6>Scroll down</h6>
+        </div>
+        
     </section>
 
     <!--------------------Contact---------------------->
@@ -248,7 +273,15 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-    
+        
+        const navLinks = document.querySelectorAll('.navbar');
+
+        navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+        });
+        });
     </script>
     <script>
     

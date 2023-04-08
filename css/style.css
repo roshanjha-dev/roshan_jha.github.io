@@ -296,6 +296,27 @@ body{
     object-fit: cover;
 }
 
+#mouse {
+    opacity: 1;
+    animation: floatImage 4s ease-in-out infinite;
+    animation-delay: 3.1s;
+}
+
+#mouse .mouse-scroll {
+    position: relative;
+    text-align: center;
+}
+
+#mouse .bx {
+    position: absolute;
+    text-decoration: none;
+    transform: translateY(-100%) translateX(-52%);
+    font-size: 50px;
+    color: #07f9d5;
+    display: inline-block;
+    
+}
+
 
 
 /* KEYFRAMES ANIMATION */
@@ -462,6 +483,7 @@ body{
 /*---------------Services---------------*/
 #services{
     padding: 70px 10% 0;
+    height: 100vh;
 }
 
 #services h1 {
@@ -502,7 +524,12 @@ body{
     transform: translateY(-10px);
 }
 
-/* -------------------portfolio---------------*/
+#services .bx {
+    position: absolute;
+    transform: translateY(0);
+}
+
+/* -------------------work---------------*/
 #portfolio{
     padding: 70px 10% 0;
 }
@@ -571,6 +598,7 @@ body{
     margin: 50px auto;
     width: fit-content;
     padding: 14px 50px;
+    
 }
 
 /*---------Contact----------*/
