@@ -213,7 +213,6 @@ body{
     height: 100%;
     background: linear-gradient(45deg, rgb(77, 255, 0), rgb(58, 51, 255));
     border-radius: 50%;
-    
     z-index: -1;
     transition: .5s ease;
 }
@@ -298,8 +297,8 @@ body{
 
 #mouse {
     opacity: 0;
-    animation: slideTop 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 2.1s, 3.1s;
+    animation: slideTop 2s ease forwards, floatImage 5s ease-in-out infinite;
+    animation-delay: 2s, 4.1s;
 }
 
 #mouse .mouse-scroll {
