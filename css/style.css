@@ -470,8 +470,18 @@ body{
 }
 
 .tab-contents ul li span{
-    color: #ee064f;
+    color: #00ee53;
+    font-size: 16px;
+}
+.tab-contents ul li h4{
+    padding-left: 10px;
+    color: #ff0000;
     font-size: 14px;
+}
+.tab-contents ul li h6{
+    padding-left: 20px;
+    color: #ffffff;
+    font-size: 13px;
 }
 .tab-contents{
     display: none;
