@@ -303,6 +303,7 @@ body{
 }
 
 #mouse .mouse-scroll {
+    position: relative;
     text-align: center;
 }
 
