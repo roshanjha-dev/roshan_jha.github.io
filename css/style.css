@@ -503,6 +503,10 @@ body{
     color: rgb(251, 2, 2);
 }
 
+#services p {
+    font-size: 14px;
+}
+
 
 .services-list{
     display: grid;
@@ -567,6 +571,7 @@ body{
     width: 100%;
     border-radius: 10px;
     display: block;
+    height: 400px;
 }
 .layer{
     width: 100%;
@@ -587,8 +592,14 @@ body{
     transition: height 0.5s;
 }
 .layer h3{
-    font-weight: 500;
+    font-weight: 800;
     margin-bottom: 20px;
+    color: #05a000;
+    font-size: 20px;
+}
+
+.layer p {
+    font-size: 16px;
 }
 .layer a{
     margin-top: 20px;
