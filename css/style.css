@@ -31,7 +31,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #0c1022;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +43,7 @@ body{
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    pointer-events: none;
+    /* pointer-events: none; */
     opacity: 0;
     animation: slideTop 1s ease forwards;
 }
@@ -630,7 +630,6 @@ body{
 /*---------Contact----------*/
 #contact{
     padding: 70px 10% 0;
-    height: 100vh;
 }
 
 #contact h1 {
